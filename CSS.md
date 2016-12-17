@@ -12,7 +12,7 @@
 
 ##<a name="folderstructure">Ordnerstruktur</a>
 ----------------------------------------------
-Eine gute Struktur ist für den gesamten Entwicklungsprozess wichtig. Daher sollte darauf geachtet werden, dass in jedem Projekt die selbe Basis gewährleistet wird. Das wird allen beteiligten Personen helfen. Das ist meine persönliche Struktur (nach [SMACSS]("https://smacss.com/")):
+Eine gute Struktur ist für den gesamten Entwicklungsprozess wichtig. Daher sollte darauf geachtet werden, dass in jedem Projekt die selbe Basis gewährleistet wird. Das wird allen beteiligten Personen helfen. Das ist meine persönliche Struktur (nach [SMACSS](https://smacss.com/)):
 
 ```
 scss/
