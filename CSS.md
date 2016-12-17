@@ -1,31 +1,43 @@
 #CSS-Styleguide
 ===============
 
-##Way of thinking
+##Meine Denkweise
 ---------------
+> Jede Zeile Code sollte so aussehen, als wäre sie von ein und derselben Person geschrieben. 
 
-
-##Table of Contents
+##Inhaltverzeichnis
 -----------------
+1. [Ordnerstruktur](#folderstructure)
 
-1. [Folder Structure](#folderstructure)
 
-
-##<a name="folderstructure">General Principles</a>
------------
-
-A good structure is important for your development process. You should pay attention that the base is the same in every project - it will help you and all involved persons. This is my personal structure:
+##<a name="folderstructure">Ordnerstruktur</a>
+----------------------------------------------
+Eine gute Struktur ist für den gesamten Entwicklungsprozess wichtig. Daher sollte darauf geachtet werden, dass in jedem Projekt die selbe Basis gewährleistet wird. Das wird allen beteiligten Personen helfen. Das ist meine persönliche Struktur (nach [SMACSS]("https://smacss.com/")):
 
 ```
 scss/
-|- _base/
+|- _base/               # Standardelemente
 |  |- _config.scss
+|  |- _presets.scss
+|  |- _headings.scss
 
-|- _layouts/
+|- _layouts/            # Bereiche
 |  |- _l-base.scss
+|  |- _l-grid.scss
 
-|- _modules/
+|- _modules/            # Wiedernutzbare modulare Teile
+|  |- _m-buttons.scss
+|  |- _m-tabs.scss
 
-layout/
+|- _states/             # Aussehen in bestimmten Zuständen
+|  |- _s-buttons.scss
+|  |- _s-tabs.scss
+|- _application.scss
+
+layout/                 # Aussehen vom Layout
 |- layout.css
 ```
+
+##<a name="selector-depth">Tiefe von Selektoren</a>
+---------------------------------------------------
+Lediglich für :hover & :focus-Elemente sollten Selektoren eine Tiefe von 3 überschreiten. Denn je tiefer man selektiert, desto mehr Probleme treten im weiteren Entwicklungsprozess auf. Es sollte stets probiert werden, etwas mit weniger Selektoren auszuweisen.
